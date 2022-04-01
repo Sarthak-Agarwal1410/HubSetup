@@ -84,12 +84,12 @@ Below are the details of setting FinAI-Lab on cloud platform
 --jupyter notebook --generate-config
 --vi jupyter_notebook_config.py
 Add : 		c.NotebookApp.tornado_settings={'headers': {'Content-Security-Policy': "frame-ancestors * 'self' "}}
-chmod -R 755 /home/shared_config/jupyter_notebook_config.py
+
 
 		https://github.com/jupyterhub/the-littlest-jupyterhub/issues/312
 		Add : 		c.NotebookApp.tornado_settings={'headers': {'Content-Security-Policy': "frame-ancestors * 'self' "}}
 		change the permission of the file using the following code:
-
+		chmod -R 755 /home/shared_config/jupyter_notebook_config.py
 
 - Step 4: Setting in the jupyterhub_config
 
